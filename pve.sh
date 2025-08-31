@@ -730,14 +730,14 @@ cat > $tmpf << 'EOF'
           title: gettext('CPU温度'),
           textField: 'thermalstate',
           renderer:function(value){
-              const p0 = value.match(/Package id 0.*?\+([\d\.]+)Â/)[1];  // CPU包温度
+              // const p0 = value.match(/Package id 0.*?\+([\d\.]+)Â/)[1];  // CPU包温度
               // const c0 = value.match(/Core 0.*?\+([\d\.]+)?/)[1];  // CPU核心1温度
               // const c1 = value.match(/Core 1.*?\+([\d\.]+)?/)[1];  // CPU核心2温度
               // const c2 = value.match(/Core 2.*?\+([\d\.]+)?/)[1];  // CPU核心3温度
               // const c3 = value.match(/Core 3.*?\+([\d\.]+)?/)[1];  // CPU核心4温度
               // const b0 = value.match(/temp1.*?\+([\d\.]+)?/)[1];  // 主板温度
               // return ` 核心1: ${c0} ℃ | 核心2: ${c1} ℃ | 核心3: ${c2} ℃ | 核心4: ${c3} ℃ || 主板: ${b0} ℃ `
-			  return ` 核心1: ${p0} ℃ `
+			  return ` 核心: 1 ℃ `
             }
     },
 
